@@ -9,10 +9,9 @@ namespace CSharp_JsonTestDeserialize
 		{
 			string jsonTest = "{\"StrData\": \"test\"}";
 
-			var jsonSetting = new JsonSerializerOptions();
 
-			var jsonObj_SystemTextJson = JsonSerializer.Deserialize<JsonStrData>(jsonTest, jsonSetting);
-			var jsonObj_SystemTextJson_NoDefault = JsonSerializer.Deserialize<JsonStrDataWithDefault>(jsonTest, jsonSetting);
+			var jsonObj_SystemTextJson = JsonSerializer.Deserialize<JsonStrData>(jsonTest);
+			var jsonObj_SystemTextJson_NoDefault = JsonSerializer.Deserialize<JsonStrDataWithDefault>(jsonTest);
 
 			
 
@@ -37,6 +36,7 @@ namespace CSharp_JsonTestDeserialize
 
 	public class JsonStrDataWithDefault
 	{
-		public string StrData = "";
+		public string StrData = null;
 	}
+
 }
