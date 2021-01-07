@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CSharp_JsonTest/obj
+/CSharp_JsonTest/bin/Debug
+/CSharp_JsonTest/.vs/CSharp_JsonTest
+/.vs
