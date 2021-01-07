@@ -37,6 +37,7 @@ namespace CSharp_JsonTestDeserialize
 
 	public class JsonStrDataWithDefault
 	{
-		public string StrData = "";
+		public string StrData = null;
 	}
+
 }
